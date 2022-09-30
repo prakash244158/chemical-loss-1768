@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <style>
+         #navbar{
+            width:100%;
+            height:90px;
+            background-color: #32AEB1;
+            margin-top: -auto;
+            display: flex;
+            align-items: center;
+           
+        }
+        #navbar>div:nth-child(1){
+            width:80%;
+            height:45%;    
+            margin:auto;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+        #navbar>div>div:nth-child(1){
+            width:220px;
+            height:100%;   
+            display: flex;
+            align-items: center;
+        }
+        #navbar>div>div:nth-child(1)>img{
+            width:170px;
+            height:170px;
+        }
+        #navbar>div>div:nth-child(1)>h2{
+            margin-left: -150px;
+
+        }
+        #navbar>div>div:nth-child(2)>input{
+            width: 500px;
+            height:39px;
+            border-radius: 5px;
+            border: 0px;
+        }
+        #navbar>div>div:nth-child(3){
+            width:400px;
+            height:40px;  
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #navbar>div:nth-child(2){
+            width:70%;
+            height:45%; 
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+        
+        }
+    
+        #navbar>div:nth-child(2)>div{
+            width:150px;
+            height: 100%; 
+            display: flex;
+            align-items: center;
+            color: white;
+        
+        }
+        #navbar>div:nth-child(2)>div>div>img{
+            width:40px;
+            height:40px;
+        }
+        
+        #navbar>div:nth-child(1)>div:nth-child(3){
+            color:white;
+        }
+        #navbar>div:nth-child(1)>div:nth-child(3)>div{
+            display: flex;
+            align-items: center;
+        }
+        
+
+        #box1{
+            width:65%;
+            height:100px;
+        }
+        #cover1{
+            width:65%;
+            height:auto;
+            margin:auto;
+            border:1px solid blue;
+        }
+        #box1>img{
+        width:100%;
+        height:100%;
+        border-radius: 10px;
+        }
+        #cards{
+            width:65%;
+            height:auto;
+        }
+       #cards>div{
+        width:100%;
+        height:180px;
+        display: flex;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       } 
+       #cards>div>div:nth-child(1){
+        width:30%;
+        height:180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       #cards>div>div:nth-child(2){
+        width:70%;
+        height:180px;
+       }
+       #cards>div>div:nth-child(2)>div{
+        width:50%;
+        display: flex;
+        justify-content: space-between;
+        margin:40px 0px 0px 180px;
+        
+       }
+       #cards>div>div:nth-child(1)>img{
+        width: auto;
+        height:auto;
+       }
+       #cards>div>div:nth-child(2)>div>button{
+        padding:8px;
+        border-radius: 4px;
+        border: 0px;
+       }
+       #box2{
+        width:65%;
+        height:260px;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,100%);
+        gap:10px;
+       }
+       #box2>div{
+        border-radius: 8px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+       }
+       #box2>div>h4{
+        margin-top: -10px;
+        margin-left: 5px;
+       }
+       #box2>div>p{
+        margin-top:-15px;
+        margin-left: 5px;
+        color: #61A825;
+       }
+       #box2>div:nth-child(1)>button{
+                margin-top: 18px;
+       }
+       #box2>div>button{
+        width:90%;
+        height:30px;
+        margin-left: 9px;
+        border-radius: 3px;
+        border: 0px;
+        color: white;
+        background-color: #32AEB1;
+       }
+       #box2>div>img{
+       margin-left: 12px;
+       }
+       #box3{
+        width:65%;
+        height:120px;
+        color:#24AEB1;
+        border-radius: 10px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        margin-top: 10px;
+        line-height: 5px;
+       }
+    
+       #box3>div{
+        width:180px;
+        height:90px;
+        margin-left: 5px;
+        margin:0px 0px 0px 10px;
+        border:1px solid white;
+   
+       }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+        <div>
+            <img src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg">
+        </div>
+            <div><input type="text" placeholder="search for medicine & wellness products.."></div>
+            <div>
+                <div>
+                    <p><b>Upload</b></p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-id-card"></i>
+                    <p>Sign in/Sign up</p>
+                </div>
+            </div>
+         </div>
+    </div>
+   <div id="cover1">
+    <div id="sub1">
+        <h2>Order Summary</h2>
+        <div id="box1"><img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1661966716_569x90bgbggg.jpg"></div>
+        <div id="cards"></div>
+        <div id="box2">
+            <div>
+                <img src="https://www.netmeds.com/images/product-v1/150x150/14020/vicks_vaporub_25_ml_0.jpg">
+                <h4>Vicks Vaporub 25 ml</h4>
+                <p>Rs.85.50</p>
+                <button>Add to Cart</button>
+            </div>
+            <div>
+                <img src="https://www.netmeds.com/images/product-v1/150x150/357753/d_protin_chocolate_powder_500_gm_0.jpg">
+                <h4>D Protin Chocolate Powder 500 gm</h4>
+                <p>Rs.487.90</p>
+                <button>Add to Cart</button>
+            </div>
+            <div>
+                <img src="https://www.netmeds.com/images/product-v1/150x150/963415/supradyn_daily_tablet_15s_0_1.jpg">
+                <h4>Supradyn Daily Multivitamin Tablet..</h4>
+                <p>Rs.49.41</p>
+                <button>Add to Cart</button>
+            </div>
+           </div>
+           <div id="box3">
+            <div>
+                <h4>SAVED FOR LATER</h4>
+                 <p>No Items in Saved for Later</p>
+            </div>
+           </div>
+    </div>
+   <div id="sub2"></div>
+   </div>
+</body>
+</html>
+<script>
+let arr=JSON.parse(localStorage.getItem("CartProducts"));
+arr.forEach(function AddCards(el,i){
+      let div1=document.createElement("div");
+
+      let div2=document.createElement("div");
+
+      let div3=document.createElement("div");
+
+      let div4=document.createElement("div");
+
+      let image=document.createElement("img");
+      image.src=el.Image;
+
+      let name=document.createElement("h4");
+      name.innerText=el.Name;
+
+      let price=document.createElement("p");
+      price.innerText=el.Price;
+
+      let button1=document.createElement("button");
+      button1.innerText="Remove"
+      button1.addEventListener("click",function(){
+             removeCard(i);
+      })
+
+      let button2=document.createElement("button");
+      button2.innerText="Save For Later"
+
+      document.querySelector("#cards").append(div1);
+      div1.append(div2,div3);
+      div2.append(image);
+      div3.append(name);
+      div3.append(price);
+      div3.append(div4);
+      div4.append(button1,button2);
+
+})
+
+function removeCard(x){
+    arr.splice(x,1);
+    localStorage.setItem("CartProducts",JSON.stringify(arr));
+    document.location.reload();
+}
+if(arr.length>=1){
+    
+}
+</script>
